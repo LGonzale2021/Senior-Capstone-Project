@@ -20,8 +20,8 @@ class loginVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let x = userNameLogin.text ?? ""
-        let vc = segue.destination as! homeVC
-        vc.username = x
+        let vc = segue.destination as? homeVC
+        vc?.username = x
     }
     
     

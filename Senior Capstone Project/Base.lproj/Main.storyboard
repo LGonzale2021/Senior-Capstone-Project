@@ -204,6 +204,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5B-G8-4IS">
                                         <rect key="frame" x="0.0" y="0.0" width="109.5" height="30"/>
+                                        <color key="backgroundColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Profile &amp; Feed">
                                             <color key="titleColor" red="0.099149622019999994" green="0.25295388699999999" blue="0.55297005180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -255,30 +256,77 @@
                                 <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community Service Hours Done: #" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vf2-OK-RQW">
+                                <rect key="frame" x="136" y="372" width="262.5" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Out What They Did!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1r-8I-YOZ">
+                                <rect key="frame" x="36" y="458.5" width="342" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Screen Shot 2021-06-10 at 8.33.43 AM" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-3e-YaY">
+                                <rect key="frame" x="121" y="507" width="172" height="198"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Description*" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0C-eY-Mec">
+                                <rect key="frame" x="16" y="720.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQp-E8-wb7">
+                                <rect key="frame" x="325" y="225" width="60" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.099149622019999994" green="0.25295388699999999" blue="0.55297005180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yur-E0-9PB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d2D-Bx-eqc"/>
                         <color key="backgroundColor" red="0.96059614419999995" green="0.96128946540000004" blue="0.9333300591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="leading" secondItem="fas-aE-wJz" secondAttribute="leading" id="1RM-xS-ssz"/>
+                            <constraint firstItem="O0C-eY-Mec" firstAttribute="leading" secondItem="d2D-Bx-eqc" secondAttribute="leading" constant="16" id="1wj-uR-2qE"/>
                             <constraint firstItem="qVJ-tk-SJX" firstAttribute="leading" secondItem="d2D-Bx-eqc" secondAttribute="leading" id="2C2-3m-eu9"/>
                             <constraint firstItem="qVJ-tk-SJX" firstAttribute="trailing" secondItem="d2D-Bx-eqc" secondAttribute="trailing" id="4yg-rA-Aaz"/>
                             <constraint firstItem="y4M-n1-Nee" firstAttribute="leading" secondItem="fas-aE-wJz" secondAttribute="trailing" constant="8" symbolic="YES" id="50p-C8-Xxp"/>
                             <constraint firstItem="d2D-Bx-eqc" firstAttribute="trailing" secondItem="FYc-bx-pFw" secondAttribute="trailing" constant="20" id="7jo-z4-Wkk"/>
                             <constraint firstItem="fas-aE-wJz" firstAttribute="top" secondItem="41s-2n-Bgc" secondAttribute="bottom" constant="8" symbolic="YES" id="B71-2H-RMg"/>
+                            <constraint firstItem="l1r-8I-YOZ" firstAttribute="leading" secondItem="FvX-2f-6AH" secondAttribute="leadingMargin" constant="16" id="BFu-Qk-gu2"/>
                             <constraint firstItem="d2D-Bx-eqc" firstAttribute="trailing" secondItem="y4M-n1-Nee" secondAttribute="trailing" constant="169" id="BKx-lt-7vm"/>
+                            <constraint firstItem="O0C-eY-Mec" firstAttribute="top" secondItem="t0b-3e-YaY" secondAttribute="bottom" constant="15.5" id="DtD-jw-r4F"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Vf2-OK-RQW" secondAttribute="bottom" constant="392" id="HWI-47-XW9"/>
                             <constraint firstItem="FYc-bx-pFw" firstAttribute="leading" secondItem="d2D-Bx-eqc" secondAttribute="leading" constant="20" id="HfA-va-4e1"/>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="top" secondItem="qVJ-tk-SJX" secondAttribute="bottom" constant="32" id="LAd-VA-kHm"/>
+                            <constraint firstItem="t0b-3e-YaY" firstAttribute="top" secondItem="l1r-8I-YOZ" secondAttribute="bottom" constant="28" id="Lqg-vp-6L7"/>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="leading" secondItem="eUo-w9-RqF" secondAttribute="leading" id="OWe-LW-Mqa"/>
+                            <constraint firstItem="Vf2-OK-RQW" firstAttribute="top" secondItem="FvX-2f-6AH" secondAttribute="topMargin" constant="284" id="SrB-Pw-bId"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1r-8I-YOZ" secondAttribute="trailing" constant="16" id="Uqd-nM-pwi"/>
                             <constraint firstItem="eUo-w9-RqF" firstAttribute="top" secondItem="fas-aE-wJz" secondAttribute="bottom" constant="8" symbolic="YES" id="WLY-oG-m94"/>
                             <constraint firstItem="qVJ-tk-SJX" firstAttribute="top" secondItem="d2D-Bx-eqc" secondAttribute="top" id="YFv-A9-7C6"/>
+                            <constraint firstItem="l1r-8I-YOZ" firstAttribute="top" secondItem="eUo-w9-RqF" secondAttribute="bottom" constant="8.5" id="bpR-lM-ph1"/>
                             <constraint firstItem="FYc-bx-pFw" firstAttribute="top" secondItem="qVJ-tk-SJX" secondAttribute="bottom" constant="8" symbolic="YES" id="bzx-rO-x3Q"/>
+                            <constraint firstItem="d2D-Bx-eqc" firstAttribute="trailing" secondItem="O0C-eY-Mec" secondAttribute="trailing" constant="16" id="ctc-EV-Xni"/>
+                            <constraint firstItem="OQp-E8-wb7" firstAttribute="top" secondItem="d2D-Bx-eqc" secondAttribute="top" constant="137" id="d5m-34-mAY"/>
                             <constraint firstItem="y4M-n1-Nee" firstAttribute="top" secondItem="FvX-2f-6AH" secondAttribute="top" constant="326.5" id="dKU-7r-EhD"/>
+                            <constraint firstItem="Vf2-OK-RQW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="y4M-n1-Nee" secondAttribute="leading" id="eQI-sQ-afR"/>
+                            <constraint firstItem="t0b-3e-YaY" firstAttribute="leading" secondItem="FvX-2f-6AH" secondAttribute="leadingMargin" constant="101" id="gVF-Xm-TtT"/>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="leading" secondItem="FYc-bx-pFw" secondAttribute="leading" id="hbm-dz-vMj"/>
                             <constraint firstItem="eUo-w9-RqF" firstAttribute="top" secondItem="fas-aE-wJz" secondAttribute="bottom" constant="8" id="hdb-Ds-hlU"/>
+                            <constraint firstItem="OQp-E8-wb7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FvX-2f-6AH" secondAttribute="leadingMargin" id="iBI-um-i1o"/>
+                            <constraint firstItem="d2D-Bx-eqc" firstAttribute="trailing" secondItem="Vf2-OK-RQW" secondAttribute="trailing" constant="15.5" id="mp0-Ic-7AK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t0b-3e-YaY" secondAttribute="trailing" constant="101" id="nq2-ND-TPz"/>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="trailing" secondItem="eUo-w9-RqF" secondAttribute="trailing" id="pIQ-RG-1Ig"/>
                             <constraint firstItem="41s-2n-Bgc" firstAttribute="trailing" secondItem="FYc-bx-pFw" secondAttribute="trailing" id="qc9-3U-zmE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OQp-E8-wb7" secondAttribute="trailing" constant="9" id="uYf-Jz-qz5"/>
                             <constraint firstItem="d2D-Bx-eqc" firstAttribute="bottom" secondItem="eUo-w9-RqF" secondAttribute="bottom" constant="363" id="wt2-C2-qfn"/>
                             <constraint firstItem="y4M-n1-Nee" firstAttribute="top" secondItem="41s-2n-Bgc" secondAttribute="bottom" constant="8" symbolic="YES" id="xqq-bS-nLh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="t0b-3e-YaY" secondAttribute="bottom" constant="108" id="zLH-QG-25B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="JWe-KT-eTN"/>
@@ -290,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Slw-mM-eei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="263"/>
+            <point key="canvasLocation" x="1828.985507246377" y="262.5"/>
         </scene>
         <!--Community Service-->
         <scene sceneID="zUl-sF-ytb">
@@ -305,26 +353,31 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What size of the organization are you looking for?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4O-lt-PrI">
                                         <rect key="frame" x="17.5" y="0.0" width="347.5" height="119"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many hours do you need?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-cz-v9A">
                                         <rect key="frame" x="78" y="195" width="226.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Would you like to work virtually or physically?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="282-ei-XTD">
                                         <rect key="frame" x="31.5" y="305" width="319.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How far from your location are you willing to travel?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1l-d1-Ciy">
                                         <rect key="frame" x="12" y="415" width="358.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="List down a few activities you are interested" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMr-mp-mbR">
                                         <rect key="frame" x="36" y="525" width="310" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -371,7 +424,7 @@
                                         <rect key="frame" x="155.5" y="0.0" width="71.5" height="20.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="................................................................................" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fev-st-I0b">
@@ -386,7 +439,7 @@
 Description 
 Location</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-ik-Nix">
@@ -395,7 +448,7 @@ Location</string>
 Description 
 Location</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcu-p2-uly">
@@ -404,7 +457,7 @@ Location</string>
 Description 
 Location</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.6805864573" green="0.62364846470000002" blue="0.32542294259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="................................................................................" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We3-fe-4aS">
@@ -415,7 +468,9 @@ Location</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmO-x7-pgg">
                                         <rect key="frame" x="170.5" y="454.5" width="41" height="30"/>
-                                        <state key="normal" title="Home"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.099149622019999994" green="0.25295388699999999" blue="0.55297005180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Lv3-V1-DEf" kind="show" id="PTt-up-kIC"/>
                                         </connections>
@@ -431,7 +486,7 @@ Location</string>
                             <constraint firstItem="NDA-RC-Mld" firstAttribute="trailing" secondItem="UGU-v2-zDe" secondAttribute="trailing" constant="16" id="g7h-D3-yrJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9WQ-gP-fi8"/>
+                    <navigationItem key="navigationItem" title="Community Service Completion" id="9WQ-gP-fi8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBT-qO-EFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,28 +505,34 @@ Location</string>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is the organization name?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DoP-Hb-RoL">
                                         <rect key="frame" x="75.5" y="0.0" width="231" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What work are you offering?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fv9-BX-EH2">
                                         <rect key="frame" x="86.5" y="104" width="209.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Would people work virtually or in-person?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvo-Ul-bzQ">
                                         <rect key="frame" x="42.5" y="208" width="297" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many people do you need? " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yW-SS-Aje">
                                         <rect key="frame" x="72.5" y="312" width="237.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORL-Jx-ZNw">
                                         <rect key="frame" x="142" y="416" width="98" height="36"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Continue..."/>
+                                        <state key="normal" title="Continue...">
+                                            <color key="titleColor" red="0.099149622019999994" green="0.25295388699999999" blue="0.55297005180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <segue destination="H3s-RE-5tC" kind="show" id="BtY-wo-QgV"/>
                                         </connections>
@@ -511,11 +572,13 @@ Location</string>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Organization's Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHl-U0-3Ex">
                                         <rect key="frame" x="80" y="99" width="222" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description of Organization" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AAg-T9-Vsl">
                                         <rect key="frame" x="88.5" y="198" width="205" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -548,7 +611,7 @@ Location</string>
                             <constraint firstAttribute="trailing" secondItem="X6Y-12-Vz7" secondAttribute="trailing" constant="16" id="X5v-Hd-L5E"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="y2n-0i-cTK"/>
+                    <navigationItem key="navigationItem" title="Offering Work" id="y2n-0i-cTK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xt-mC-BIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -596,7 +659,9 @@ YOU CAN CHECK YOUR STATUS IN THE HOME PAGE
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsl-vZ-aaf">
                                         <rect key="frame" x="0.0" y="289.5" width="409" height="30"/>
-                                        <state key="normal" title="Home"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.099149622019999994" green="0.25295388699999999" blue="0.55297005180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <segue destination="Lv3-V1-DEf" kind="show" id="lge-WO-tMV"/>
                                         </connections>
@@ -618,7 +683,7 @@ YOU CAN CHECK YOUR STATUS IN THE HOME PAGE
                             <constraint firstItem="sDi-yk-Xje" firstAttribute="trailing" secondItem="XeZ-7R-D80" secondAttribute="trailing" constant="2.5" id="uaa-bJ-4lS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="a70-OT-GrU"/>
+                    <navigationItem key="navigationItem" title="Offering Work Completion" id="a70-OT-GrU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7y-b1-McG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -740,12 +805,14 @@ YOU CAN CHECK YOUR STATUS IN THE HOME PAGE
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xey-eo-2fb"/>
+        <segue reference="jJg-WS-4ic"/>
         <segue reference="a8S-0K-fHf"/>
+        <segue reference="BnT-6x-PAl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2021-05-17 at 8.33.16 AM" width="236" height="780"/>
         <image name="Screen Shot 2021-05-25 at 9.21.09 AM" width="750" height="640"/>
+        <image name="Screen Shot 2021-06-10 at 8.33.43 AM" width="570" height="748"/>
         <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
